@@ -215,6 +215,28 @@ game.onUpdateInterval(500, function () {
         . . . e e f f e e e e e e . . . 
         . . . . . . e e e e e . . . . . 
         `, SpriteKind.Enemy)
+    Enemigo.setPosition(randint(0, 100), 0)
     Enemigo.setVelocity(0, 50)
+})
+game.onUpdateInterval(500, function () {
+    Enemigo = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . e e e e e e e . . . 
+        . . . . . e e e e e e e e e . . 
+        . . . . e e e e e e e e e e e . 
+        . . e e f f f e e f f f e e e . 
+        . . e e f f f e e f f f f e e e 
+        . e e e e e e e e f f f e e e e 
+        . e e e e e e e e e e e e e e e 
+        . e e e e e e e e e e e e e e e 
+        . e e e e e f e e e f f e e e e 
+        . e e e f f f e e f f f e e e . 
+        . e e e f f f e e f f f e e e . 
+        . e e e f f e e e e e e e e e . 
+        . . e e e e e e e e e e e e . . 
+        . . . e e e e e e e e e e . . . 
+        . . . . . . e e e e e . . . . . 
+        `, SpriteKind.Enemy)
     Enemigo.setPosition(randint(0, 200), 0)
+    Enemigo.setVelocity(0, 75)
 })
